@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Health & Mood Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Virtual Health & Mood Journal</h1>
+  </header>
+
+  <section id="entry-section">
+    <h2>Daily Mood & Health Habits</h2>
+    <div id="mood-selector">
+      <label>Select your mood:</label>
+      <div class="emoji-options">
+        <button class="emoji-btn" data-mood="happy" title="Happy">😊</button>
+        <button class="emoji-btn" data-mood="sad" title="Sad">😢</button>
+        <button class="emoji-btn" data-mood="angry" title="Angry">😠</button>
+        <button class="emoji-btn" data-mood="neutral" title="Neutral">😐</button>
+        <button class="emoji-btn" data-mood="excited" title="Excited">🤩</button>
+      </div>
+    </div>
+
+    <div id="habits-input">
+      <label for="sleep-hours">Sleep hours:</label>
+      <input type="number" id="sleep-hours" min="0" max="24" step="0.1" />
+      <label for="exercise-minutes">Exercise minutes:</label>
+      <input type="number" id="exercise-minutes" min="0" max="180" />
+      <label for="water-glasses">Glasses of water:</label>
+      <input type="number" id="water-glasses" min="0" max="20" />
+    </div>
+
+    <button id="save-entry">Save Today's Entry</button>
+  </section>
+
+  <section id="tips-section">
+    <h2>AI Wellness Tips</h2>
+    <div id="wellness-tips">
+      <p>Save 7 days of entries to get personalized wellness tips.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
